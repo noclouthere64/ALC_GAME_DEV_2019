@@ -441,8 +441,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
-  orthographic size: 10
+  orthographic: 1
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -688,6 +688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1652605350}
+  - component: {fileID: 1652605351}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -709,24 +710,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2022758463 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5842370709853101110, guid: cfa20a5ddd60f4070aed158745553877,
-    type: 3}
-  m_PrefabInstance: {fileID: 5842370709320820978}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2022758468
+--- !u!114 &1652605351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022758463}
+  m_GameObject: {fileID: 1652605349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29813203730864f6694dc307aafcce50, type: 3}
+  m_Script: {fileID: 11500000, guid: 86a192bb84f34431785792f574a97139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 1825190819962050572, guid: e1fa674d7907a4f29a67c9b2dd448df9, type: 3}
+  - {fileID: 325322840437325254, guid: 7df067048657648889c16f0eeccb25b5, type: 3}
+  - {fileID: 377258621970916116, guid: 20249082d5f3e4fe987447aa46b7ac25, type: 3}
 --- !u!1001 &325322839432807581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,7 +798,8 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7df067048657648889c16f0eeccb25b5, type: 3}
 --- !u!1001 &377258620991257956
 PrefabInstance:
@@ -873,7 +873,8 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 20249082d5f3e4fe987447aa46b7ac25, type: 3}
 --- !u!1001 &1825190820197717175
 PrefabInstance:
@@ -947,7 +948,8 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e1fa674d7907a4f29a67c9b2dd448df9, type: 3}
 --- !u!1001 &5842370709320820978
 PrefabInstance:
