@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    private float spawnRangeX = 20;
+    private float spawnRangeX = 10;
     private float spawnPosZ = 20;
     private float startDelay = 2;
     private float spawnInterval = 5.5f;
@@ -13,12 +13,6 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void SpawnRandomAnimal()
