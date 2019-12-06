@@ -9,6 +9,7 @@ public class PlayerControllerX : MonoBehaviour
 
     public float floatForce;
     private float gravityModifier = 1.5f;
+
     private Rigidbody playerRb;
 
     public ParticleSystem explosionParticle;
@@ -19,6 +20,7 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip explodeSound;
 
     private float yRange = 15.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +40,11 @@ public class PlayerControllerX : MonoBehaviour
             playerRb.AddForce(Vector3.up * floatForce);
         }
 
+        //Doesn't allow the player to float all the way up
         if(transform.position.y > yRange)
         {
-            transform.position = new Vector3(transform.position.y, yRange, transform.position.z);
+            transform.position = new Vector3(transform.position.z, yRange);
+     
         }
 
     }
