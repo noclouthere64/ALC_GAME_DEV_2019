@@ -44,7 +44,8 @@ public class PlayerControllerX : MonoBehaviour
         if(transform.position.y > yRange)
         {
             transform.position = new Vector3(transform.position.z, yRange);
-     
+            playerRb.AddForce(Vector3.down * floatForce);
+
         }
 
     }
