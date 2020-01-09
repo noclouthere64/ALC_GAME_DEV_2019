@@ -12,22 +12,34 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
-        Physics.gravity *= gravityModifier;
+        constrainPlayer();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        MovePlayer();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isOnGround = true;
+    }
+
+    //Allow the player to jump by using the spacebar
+    void MovePlayer()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //Contrains the players movement
+    void constrainPlayer()
     {
-        isOnGround = true;
+        playerRb = GetComponent<Rigidbody>();
+        Physics.gravity *= gravityModifier;
     }
 }
