@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 200104508}
   - component: {fileID: 200104507}
   - component: {fileID: 200104506}
+  - component: {fileID: 200104510}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -212,6 +213,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &200104510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200104505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5268e1478864db741abe2d568e732947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &229046628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -712,6 +725,7 @@ GameObject:
   - component: {fileID: 1593505696}
   - component: {fileID: 1593505695}
   - component: {fileID: 1593505694}
+  - component: {fileID: 1593505698}
   m_Layer: 0
   m_Name: Life
   m_TagString: Untagged
@@ -793,6 +807,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593505698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593505693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5268e1478864db741abe2d568e732947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736693505
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +955,7 @@ GameObject:
   - component: {fileID: 1884774834}
   - component: {fileID: 1884774833}
   - component: {fileID: 1884774832}
+  - component: {fileID: 1884774836}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -1009,6 +1036,18 @@ Transform:
   m_Father: {fileID: 1014959624}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1884774836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884774831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5268e1478864db741abe2d568e732947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8850850722560603122
 PrefabInstance:
   m_ObjectHideFlags: 0
